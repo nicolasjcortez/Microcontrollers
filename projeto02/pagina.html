@@ -1,0 +1,18 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<p>Funções</p>
+<ul>
+	<li><a href="/ligardesligar">Ligar/Desligar</a></li>
+	<li><a href="/n/5">Dormir em 5 segundos</a></li>
+	<li><a href="/aumvolume">Aumentar o volume+</a></li>
+	<li><a href="/dimvolume">Diminuir o volume-</a></li>
+	<li><a href="/mute">Mutar a televisão</a></li>
+</ul>
+
+<p>Canais</p>
+
+
+<ul>
+ 	{% for el in janks %}
+	<li><a href="{{"/canal/"+el["codigo"]}}">{{el["nome"]}}</a></li>
+       {% endfor %}
+</ul>
